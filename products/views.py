@@ -13,7 +13,7 @@ class ProductLandingPageView(TemplateView):
 
 class CreateCheckoutSessionView(View):
 
-    def post(self,request,*args,**kwargs):
+    def post(self,request,*args,**kwargs): 
         checkout_session = stripe.checkout.Session.create(
             line_items=[
                 {
@@ -36,5 +36,3 @@ class CreateCheckoutSessionView(View):
         return JsonResponse({
             'id' : checkout_session.id,
         })
-        
-        
