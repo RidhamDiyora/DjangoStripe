@@ -4,6 +4,6 @@ from products.views import CreateCheckoutSessionView,ProductLandingPageView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', ProductLandingPageView.as_view(), name='landing-page-view'),
+    path('', ProductLandingPageView.as_view(), name='landing-page'),
     path('create-checkout-session/', CreateCheckoutSessionView.as_view(), name='create-checkout-session' )
 ]
