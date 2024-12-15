@@ -47,7 +47,6 @@ class CreateCheckoutSessionView(View):
                         'unit_amount': product.price,
                         'product_data': {
                             'name': product.name,
-                            # 'images': ['https://i.imgur.com/EHyR2nP.png'],
                         },
                     },
                     'quantity': 1,
